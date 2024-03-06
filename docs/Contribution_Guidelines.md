@@ -61,7 +61,7 @@ As a contributor, before submitting your request, kindly follow these guidelines
 
 ## Commit Message Format
 
-Commit messages must include both `<type>` and `<summary>` sections.
+//Commit messages must include both `<type>` and `<summary>` sections.
 
 ```bash
 [<type>]: <summary>
