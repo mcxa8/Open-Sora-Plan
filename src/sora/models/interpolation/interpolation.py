@@ -21,6 +21,37 @@ from utils.build_utils import build_from_cfg
 from utils.utils import InputPadder
 
 
+
+###
+ * http://www.freebuf.com/
+ *           _.._        ,------------.
+ *        ,'      `.    ( We want you! )
+ *       /  __) __` \    `-,----------'
+ *      (  (`-`(-')  ) _.-'
+ *      /)  \  = /  (
+ *     /'    |--' .  \
+ *    (  ,---|  `-.)__`
+ *     )(  `-.,--'   _`-.
+ *    '/,'          (  Uu",
+ *     (_       ,    `/,-' )
+ *     `.__,  : `-'/  /`--'
+ *       |     `--'  |
+ *       `   `-._   /
+ *        \        (
+ *        /\ .      \.  freebuf
+ *       / |` \     ,-\
+ *      /  \| .)   /   \
+ *     ( ,'|\    ,'     :
+ *     | \,`.`--"/      }
+ *     `,'    \  |,'    /
+ *    / "-._   `-/      |
+ *    "-.   "-.,'|     ;
+ *   /        _/["---'""]
+ *  :        /  |"-     '
+ *  '           |      /
+ *              `      |
+###
+
 def init(device="cuda"):
 
     '''
@@ -118,7 +149,7 @@ def interpolater(model, inputs, scale, padder, iters=1):
         returns:
             outputs: list, the list of the output frames.
     '''
-
+    # 
     print(f'Start frame interpolation:')
     embt = torch.tensor(1/2).float().view(1, 1, 1, 1).to(device)
 
